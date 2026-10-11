@@ -41,7 +41,7 @@ estimate; belief entropy and confidence over time; battery with the two recharge
 ## Quick start
 
 ```bash
-git clone <your-repo-url> && cd walle-eve-signal
+git clone <github.com/Neilfal/walle-eve-signal/> && cd walle-eve-signal
 python -m venv .venv && source .venv/bin/activate      # optional
 pip install -r requirements.txt                         # numpy
 pip install -r requirements-optional.txt                # optional: matplotlib (PNG), pyyaml (YAML configs)
