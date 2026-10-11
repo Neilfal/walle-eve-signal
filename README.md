@@ -355,4 +355,4 @@ walle-eve-signal/
 
 ## License
 
-MIT, see `LICENSE` (replace `<YOUR NAME>`).
+MIT, see `LICENSE`.
