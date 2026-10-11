@@ -1,0 +1,161 @@
+{
+  "mission": "Sample 1 - the quiet corridor",
+  "outcome": "EVE_LOCALIZED",
+  "inferred_location": [
+    13,
+    12
+  ],
+  "confidence": 0.974,
+  "confidence_definition": "probability that EVE is within one cell of the inferred location",
+  "visually_confirmed": false,
+  "credible_region_cells_90pct": 6,
+  "inferred_status": "unknown",
+  "top_hypotheses": [
+    {
+      "cell": [
+        13,
+        12
+      ],
+      "probability": 0.354
+    },
+    {
+      "cell": [
+        12,
+        12
+      ],
+      "probability": 0.263
+    },
+    {
+      "cell": [
+        13,
+        11
+      ],
+      "probability": 0.11
+    },
+    {
+      "cell": [
+        12,
+        13
+      ],
+      "probability": 0.102
+    },
+    {
+      "cell": [
+        13,
+        13
+      ],
+      "probability": 0.045
+    }
+  ],
+  "evidence": [
+    {
+      "step": 0,
+      "source": "initial_signal",
+      "position": [
+        1,
+        1
+      ],
+      "kind": "signal",
+      "text": "Initial signal (t=0): strength 0.16, bearing 94 deg (+/-35)."
+    },
+    {
+      "step": 17,
+      "source": "scan",
+      "position": [
+        12,
+        6
+      ],
+      "kind": "signal",
+      "text": "Signal at (12, 6): strength 0.449, bearing 154 deg; EVE not within visual range."
+    },
+    {
+      "step": 51,
+      "source": "scan",
+      "position": [
+        8,
+        10
+      ],
+      "kind": "signal",
+      "text": "Signal at (8, 10): strength 0.564, bearing 104 deg; EVE not within visual range."
+    },
+    {
+      "step": 51,
+      "source": "clue c2",
+      "position": [
+        9,
+        8
+      ],
+      "kind": "range",
+      "text": "Old beacon log: the signal source is roughly 6.1 cells from here.",
+      "consistent_with_final_belief": "consistent"
+    }
+  ],
+  "clues_found": 1,
+  "strategy_timeline": [
+    {
+      "action_no": 0,
+      "from": "start",
+      "to": "explore",
+      "reason": "Belief peak (13, 6) (15% within 1 cell), entropy 6.66 bits. Battery 36/36. Next scan point (12, 6): 16 steps, expected information gain 3.71 bits + new-area bonus, cost 18 battery; 18 would remain vs 18 needed to get back to a charger. Runner-up (13, 5) scored 3.36 vs 3.42."
+    },
+    {
+      "action_no": 17,
+      "from": "explore",
+      "to": "return",
+      "reason": "No scan point is affordable and still leaves a safe return; turning back."
+    },
+    {
+      "action_no": 33,
+      "from": "return",
+      "to": "recharge",
+      "reason": "At a charger with 2/36 battery (6%): topping up before the next excursion."
+    },
+    {
+      "action_no": 34,
+      "from": "recharge",
+      "to": "explore",
+      "reason": "Belief peak (13, 12) (87% within 1 cell), entropy 3.56 bits. Battery 36/36. Next scan point (8, 10): 16 steps, expected information gain 1.14 bits + new-area bonus, cost 18 battery; 18 would remain vs 18 needed to get back to a charger. Runner-up (9, 9) scored 0.58 vs 0.85."
+    },
+    {
+      "action_no": 51,
+      "from": "explore",
+      "to": "finish",
+      "reason": "Belief is concentrated: 97% probability that EVE is within one cell of (13, 12)."
+    }
+  ],
+  "termination": {
+    "agent_reason": "Belief is concentrated: 97% probability that EVE is within one cell of (13, 12).",
+    "environment_reason": "agent_stop"
+  },
+  "resources": {
+    "actions": 52,
+    "moves": 48,
+    "scans": 2,
+    "recharges": 1,
+    "battery_spent": 52.0,
+    "battery_left": 18,
+    "battery_capacity": 36,
+    "time_used": 56,
+    "time_budget": 150,
+    "final_position": [
+      8,
+      10
+    ],
+    "steps_to_nearest_charger": 16,
+    "stranded": false
+  },
+  "recommended_next_step": "Move to within one cell of (13, 12) and scan once to visually confirm EVE (confidence 97%). It is 7 moves away (~7 battery); the current charge (18) is enough.",
+  "evaluation_vs_ground_truth": {
+    "note": "Computed by the evaluator after the mission; the agent never saw this.",
+    "true_eve_position": [
+      13,
+      12
+    ],
+    "true_eve_status": "low_power",
+    "position_error_cells": 0.0,
+    "located_within_visual_range": true,
+    "status_correct": null,
+    "spoofed_scans_received": 0,
+    "decoy_clues_found": []
+  }
+}

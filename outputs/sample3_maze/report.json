@@ -1,0 +1,171 @@
+{
+  "mission": "Sample 3 - tiny YAML maze",
+  "outcome": "EVE_LOCALIZED",
+  "inferred_location": [
+    8,
+    8
+  ],
+  "confidence": 0.988,
+  "confidence_definition": "probability that EVE is within one cell of the inferred location",
+  "visually_confirmed": false,
+  "credible_region_cells_90pct": 2,
+  "inferred_status": "dormant",
+  "top_hypotheses": [
+    {
+      "cell": [
+        9,
+        9
+      ],
+      "probability": 0.869
+    },
+    {
+      "cell": [
+        9,
+        8
+      ],
+      "probability": 0.091
+    },
+    {
+      "cell": [
+        9,
+        7
+      ],
+      "probability": 0.024
+    },
+    {
+      "cell": [
+        9,
+        6
+      ],
+      "probability": 0.012
+    },
+    {
+      "cell": [
+        8,
+        8
+      ],
+      "probability": 0.002
+    }
+  ],
+  "evidence": [
+    {
+      "step": 0,
+      "source": "initial_signal",
+      "position": [
+        0,
+        0
+      ],
+      "kind": "signal",
+      "text": "Initial signal (t=0): strength 0.30, bearing 140 deg (+/-30)."
+    },
+    {
+      "step": 11,
+      "source": "scan",
+      "position": [
+        4,
+        6
+      ],
+      "kind": "signal",
+      "text": "Signal at (4, 6): strength 0.395, bearing 112 deg; EVE not within visual range."
+    },
+    {
+      "step": 14,
+      "source": "scan",
+      "position": [
+        5,
+        7
+      ],
+      "kind": "signal",
+      "text": "Signal at (5, 7): strength 0.466, bearing 87 deg; EVE not within visual range."
+    },
+    {
+      "step": 41,
+      "source": "scan",
+      "position": [
+        9,
+        4
+      ],
+      "kind": "signal",
+      "text": "Signal at (9, 4): strength 0.400, bearing 232 deg; EVE not within visual range."
+    },
+    {
+      "step": 41,
+      "source": "clue c2",
+      "position": [
+        7,
+        4
+      ],
+      "kind": "status",
+      "text": "Scorch marks and residue suggest EVE is dormant.",
+      "consistent_with_final_belief": "n/a"
+    }
+  ],
+  "clues_found": 1,
+  "strategy_timeline": [
+    {
+      "action_no": 0,
+      "from": "start",
+      "to": "explore",
+      "reason": "Belief peak (5, 7) (19% within 1 cell), entropy 5.40 bits. Battery 30/30. Next scan point (4, 6): 10 steps, expected information gain 4.04 bits + new-area bonus, cost 12 battery; 18 would remain vs 12 needed to get back to a charger. Runner-up (2, 6) scored 3.87 vs 3.93."
+    },
+    {
+      "action_no": 14,
+      "from": "explore",
+      "to": "return",
+      "reason": "No scan point is affordable and still leaves a safe return; turning back."
+    },
+    {
+      "action_no": 26,
+      "from": "return",
+      "to": "recharge",
+      "reason": "At a charger with 2/30 battery (7%): topping up before the next excursion."
+    },
+    {
+      "action_no": 27,
+      "from": "recharge",
+      "to": "explore",
+      "reason": "Belief peak (9, 7) (88% within 1 cell), entropy 2.04 bits. Battery 30/30. Next scan point (9, 4): 13 steps, expected information gain 1.38 bits + new-area bonus, cost 15 battery; 15 would remain vs 15 needed to get back to a charger. Runner-up (9, 3) scored 1.01 vs 1.18."
+    },
+    {
+      "action_no": 41,
+      "from": "explore",
+      "to": "finish",
+      "reason": "Belief is concentrated: 99% probability that EVE is within one cell of (8, 8)."
+    }
+  ],
+  "termination": {
+    "agent_reason": "Belief is concentrated: 99% probability that EVE is within one cell of (8, 8).",
+    "environment_reason": "agent_stop"
+  },
+  "resources": {
+    "actions": 42,
+    "moves": 37,
+    "scans": 3,
+    "recharges": 1,
+    "battery_spent": 43.0,
+    "battery_left": 15,
+    "battery_capacity": 30,
+    "time_used": 46,
+    "time_budget": 120,
+    "final_position": [
+      9,
+      4
+    ],
+    "steps_to_nearest_charger": 13,
+    "stranded": false
+  },
+  "recommended_next_step": "Move to within one cell of (8, 8) and scan once to visually confirm EVE (confidence 99%). It is 5 moves away (~5 battery); the current charge (15) is enough. EVE appears dormant: approach slowly and try a wake-up signal.",
+  "evaluation_vs_ground_truth": {
+    "note": "Computed by the evaluator after the mission; the agent never saw this.",
+    "true_eve_position": [
+      9,
+      9
+    ],
+    "true_eve_status": "dormant",
+    "position_error_cells": 1.41,
+    "located_within_visual_range": true,
+    "status_correct": true,
+    "spoofed_scans_received": 0,
+    "decoy_clues_found": []
+  }
+}

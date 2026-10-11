@@ -1,0 +1,14 @@
+Legend: # wall | B charger | W WALL-E | * path | c clue found | X inferred EVE | E true EVE (eval only) | digits 1-9 = belief relative to peak ('.' = ~0)
+
+Final map: Sample 3 - tiny YAML maze
+    0123456789
+  0 B*****....
+  1 *####*###.
+  2 *...#*****
+  3 *.#.#.###*
+  4 *.#...#c.W
+  5 *.#####.#.
+  6 ******#.#.
+  7 .####*#.#1
+  8 .#....#.X1
+  9 .#.####.#E

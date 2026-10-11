@@ -1,0 +1,26 @@
+name: tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pyyaml matplotlib
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Smoke-test the sample missions
+        run: |
+          python run.py configs/sample1.json --out /tmp/s1 --no-plot
+          python run.py configs/sample2_decoys.json --out /tmp/s2 --no-plot
+          python run.py configs/sample3_maze.yaml --out /tmp/s3 --no-plot

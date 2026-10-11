@@ -1,0 +1,3 @@
+# Optional extras
+matplotlib>=3.5   # PNG summary plot (mission.png)
+pyyaml>=6.0       # YAML mission configs

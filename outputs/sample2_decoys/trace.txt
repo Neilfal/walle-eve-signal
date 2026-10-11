@@ -1,0 +1,340 @@
+Mission trace: Sample 2 - decoys and spoofed signals
+====================================================
+
+[step 001 | t=001 | battery 45 -> 44 | mode explore] MOVE E from (1, 1)
+   why : Belief peak (17, 16) (6% within 1 cell), entropy 7.91 bits. Battery 45/45. Next scan point (13, 15): 26 steps, expected information gain 4.00 bits + new-area bonus, cost 28 battery; 17 would remain vs 10 needed to get back to a charger. Runner-up (12, 13) scored 3.38 vs 3.41.
+   saw : Moved E to (2,1).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 002 | t=002 | battery 44 -> 43 | mode explore] MOVE S from (2, 1)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (2,2).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 003 | t=003 | battery 43 -> 42 | mode explore] MOVE S from (2, 2)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (2,3).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 004 | t=004 | battery 42 -> 41 | mode explore] MOVE S from (2, 3)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (2,4).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 005 | t=005 | battery 41 -> 40 | mode explore] MOVE S from (2, 4)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (2,5).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 006 | t=006 | battery 40 -> 39 | mode explore] MOVE S from (2, 5)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (2,6).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 007 | t=007 | battery 39 -> 38 | mode explore] MOVE S from (2, 6)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (2,7).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 008 | t=008 | battery 38 -> 37 | mode explore] MOVE S from (2, 7)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (2,8).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 009 | t=009 | battery 37 -> 36 | mode explore] MOVE E from (2, 8)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (3,8).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 010 | t=010 | battery 36 -> 35 | mode explore] MOVE S from (3, 8)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (3,9).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 011 | t=011 | battery 35 -> 34 | mode explore] MOVE S from (3, 9)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (3,10).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 012 | t=012 | battery 34 -> 33 | mode explore] MOVE S from (3, 10)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (3,11).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 013 | t=013 | battery 33 -> 32 | mode explore] MOVE S from (3, 11)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (3,12).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 014 | t=014 | battery 32 -> 31 | mode explore] MOVE S from (3, 12)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (3,13).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 015 | t=015 | battery 31 -> 30 | mode explore] MOVE S from (3, 13)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (3,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 016 | t=016 | battery 30 -> 29 | mode explore] MOVE E from (3, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (4,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 017 | t=017 | battery 29 -> 28 | mode explore] MOVE E from (4, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (5,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 018 | t=018 | battery 28 -> 27 | mode explore] MOVE E from (5, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (6,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 019 | t=019 | battery 27 -> 26 | mode explore] MOVE E from (6, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (7,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 020 | t=020 | battery 26 -> 25 | mode explore] MOVE E from (7, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (8,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 021 | t=021 | battery 25 -> 24 | mode explore] MOVE E from (8, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (9,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 022 | t=022 | battery 24 -> 23 | mode explore] MOVE E from (9, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (10,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 023 | t=023 | battery 23 -> 22 | mode explore] MOVE E from (10, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (11,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 024 | t=024 | battery 22 -> 21 | mode explore] MOVE E from (11, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (12,14).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 025 | t=025 | battery 21 -> 20 | mode explore] MOVE S from (12, 14)
+   why : En route to scan point (13, 15).
+   saw : Moved S to (12,15).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 026 | t=026 | battery 20 -> 19 | mode explore] MOVE E from (12, 15)
+   why : En route to scan point (13, 15).
+   saw : Moved E to (13,15).
+   belief: estimate (17, 16), confidence 6%, entropy 7.91 bits
+
+[step 027 | t=027 | battery 19 -> 17 | mode explore] SCAN from (13, 15)
+   why : Arrived at (13, 15): taking a reading.
+   saw : Scanned at (13, 15): strength 0.518, bearing 144 deg. New clue(s): c4.
+   clue: [c4] Wheel tracks and a dragged cable head S (bearing ~189 deg).
+   belief: estimate (16, 18), confidence 72%, entropy 3.72 bits
+
+[step 028 | t=028 | battery 17 -> 16 | mode verify] MOVE S from (13, 15)
+   why : Belief peak (16, 18) (72% within 1 cell), entropy 3.72 bits. Battery 17/45. Next scan point (16, 18): 6 steps, expected information gain 3.46 bits + new-area bonus, cost 8 battery; 9 would remain vs 4 needed to get back to a charger. Runner-up (15, 18) scored 3.35 vs 3.47.
+   saw : Moved S to (13,16).
+   belief: estimate (16, 18), confidence 72%, entropy 3.72 bits
+
+[step 029 | t=029 | battery 16 -> 15 | mode verify] MOVE E from (13, 16)
+   why : En route to scan point (16, 18).
+   saw : Moved E to (14,16).
+   belief: estimate (16, 18), confidence 72%, entropy 3.72 bits
+
+[step 030 | t=030 | battery 15 -> 14 | mode verify] MOVE S from (14, 16)
+   why : En route to scan point (16, 18).
+   saw : Moved S to (14,17).
+   belief: estimate (16, 18), confidence 72%, entropy 3.72 bits
+
+[step 031 | t=031 | battery 14 -> 13 | mode verify] MOVE S from (14, 17)
+   why : En route to scan point (16, 18).
+   saw : Moved S to (14,18).
+   belief: estimate (16, 18), confidence 72%, entropy 3.72 bits
+
+[step 032 | t=032 | battery 13 -> 12 | mode verify] MOVE E from (14, 18)
+   why : En route to scan point (16, 18).
+   saw : Moved E to (15,18).
+   belief: estimate (16, 18), confidence 72%, entropy 3.72 bits
+
+[step 033 | t=033 | battery 12 -> 11 | mode verify] MOVE E from (15, 18)
+   why : En route to scan point (16, 18).
+   saw : Moved E to (16,18).
+   belief: estimate (16, 18), confidence 72%, entropy 3.72 bits
+
+[step 034 | t=034 | battery 11 -> 9 | mode verify] SCAN from (16, 18)
+   why : Arrived at (16, 18): taking a reading.
+   saw : Scanned at (16, 18): strength 0.264, bearing 325 deg.
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 035 | t=035 | battery 9 -> 8 | mode return] MOVE E from (16, 18)
+   why : Battery low (9/45, 20%). Turning back: 2 steps to the nearest charger.
+   saw : Moved E to (17,18).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 036 | t=036 | battery 8 -> 7 | mode return] MOVE E from (17, 18)
+   why : Returning to the charger.
+   saw : Moved E to (18,18).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 037 | t=042 | battery 7 -> 45 | mode recharge] RECHARGE from (18, 18)
+   why : At a charger with 7/45 battery (16%): topping up before the next excursion.
+   saw : Battery refilled to 45.
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 038 | t=043 | battery 45 -> 44 | mode explore] MOVE N from (18, 18)
+   why : Belief peak (10, 11) (23% within 1 cell), entropy 5.89 bits. Battery 45/45. Next scan point (10, 10): 16 steps, expected information gain 3.41 bits + new-area bonus, cost 18 battery; 27 would remain vs 18 needed to get back to a charger. Runner-up (10, 11) scored 3.01 vs 3.12.
+   saw : Moved N to (18,17).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 039 | t=044 | battery 44 -> 43 | mode explore] MOVE N from (18, 17)
+   why : En route to scan point (10, 10).
+   saw : Moved N to (18,16).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 040 | t=045 | battery 43 -> 42 | mode explore] MOVE N from (18, 16)
+   why : En route to scan point (10, 10).
+   saw : Moved N to (18,15).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 041 | t=046 | battery 42 -> 41 | mode explore] MOVE N from (18, 15)
+   why : En route to scan point (10, 10).
+   saw : Moved N to (18,14).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 042 | t=047 | battery 41 -> 40 | mode explore] MOVE N from (18, 14)
+   why : En route to scan point (10, 10).
+   saw : Moved N to (18,13).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 043 | t=048 | battery 40 -> 39 | mode explore] MOVE W from (18, 13)
+   why : En route to scan point (10, 10).
+   saw : Moved W to (17,13).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 044 | t=049 | battery 39 -> 38 | mode explore] MOVE W from (17, 13)
+   why : En route to scan point (10, 10).
+   saw : Moved W to (16,13).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 045 | t=050 | battery 38 -> 37 | mode explore] MOVE W from (16, 13)
+   why : En route to scan point (10, 10).
+   saw : Moved W to (15,13).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 046 | t=051 | battery 37 -> 36 | mode explore] MOVE W from (15, 13)
+   why : En route to scan point (10, 10).
+   saw : Moved W to (14,13).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 047 | t=052 | battery 36 -> 35 | mode explore] MOVE N from (14, 13)
+   why : En route to scan point (10, 10).
+   saw : Moved N to (14,12).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 048 | t=053 | battery 35 -> 34 | mode explore] MOVE W from (14, 12)
+   why : En route to scan point (10, 10).
+   saw : Moved W to (13,12).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 049 | t=054 | battery 34 -> 33 | mode explore] MOVE W from (13, 12)
+   why : En route to scan point (10, 10).
+   saw : Moved W to (12,12).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 050 | t=055 | battery 33 -> 32 | mode explore] MOVE W from (12, 12)
+   why : En route to scan point (10, 10).
+   saw : Moved W to (11,12).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 051 | t=056 | battery 32 -> 31 | mode explore] MOVE N from (11, 12)
+   why : En route to scan point (10, 10).
+   saw : Moved N to (11,11).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 052 | t=057 | battery 31 -> 30 | mode explore] MOVE N from (11, 11)
+   why : En route to scan point (10, 10).
+   saw : Moved N to (11,10).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 053 | t=058 | battery 30 -> 29 | mode explore] MOVE W from (11, 10)
+   why : En route to scan point (10, 10).
+   saw : Moved W to (10,10).
+   belief: estimate (10, 11), confidence 23%, entropy 5.89 bits
+
+[step 054 | t=059 | battery 29 -> 27 | mode explore] SCAN from (10, 10)
+   why : Arrived at (10, 10): taking a reading.
+   saw : Scanned at (10, 10): strength 0.339, bearing 126 deg. New clue(s): c2.
+   clue: [c2] Old beacon log: the signal source is roughly 13.3 cells from here.
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 055 | t=060 | battery 27 -> 26 | mode explore] MOVE S from (10, 10)
+   why : Belief peak (14, 18) (33% within 1 cell), entropy 5.25 bits. Battery 27/45. Next scan point (13, 18): 11 steps, expected information gain 2.97 bits + new-area bonus, cost 13 battery; 14 would remain vs 7 needed to get back to a charger. Runner-up (17, 17) scored 2.77 vs 2.83.
+   saw : Moved S to (10,11).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 056 | t=061 | battery 26 -> 25 | mode explore] MOVE S from (10, 11)
+   why : En route to scan point (13, 18).
+   saw : Moved S to (10,12).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 057 | t=062 | battery 25 -> 24 | mode explore] MOVE S from (10, 12)
+   why : En route to scan point (13, 18).
+   saw : Moved S to (10,13).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 058 | t=063 | battery 24 -> 23 | mode explore] MOVE S from (10, 13)
+   why : En route to scan point (13, 18).
+   saw : Moved S to (10,14).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 059 | t=064 | battery 23 -> 22 | mode explore] MOVE S from (10, 14)
+   why : En route to scan point (13, 18).
+   saw : Moved S to (10,15).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 060 | t=065 | battery 22 -> 21 | mode explore] MOVE S from (10, 15)
+   why : En route to scan point (13, 18).
+   saw : Moved S to (10,16).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 061 | t=066 | battery 21 -> 20 | mode explore] MOVE S from (10, 16)
+   why : En route to scan point (13, 18).
+   saw : Moved S to (10,17).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 062 | t=067 | battery 20 -> 19 | mode explore] MOVE S from (10, 17)
+   why : En route to scan point (13, 18).
+   saw : Moved S to (10,18).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 063 | t=068 | battery 19 -> 18 | mode explore] MOVE E from (10, 18)
+   why : En route to scan point (13, 18).
+   saw : Moved E to (11,18).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 064 | t=069 | battery 18 -> 17 | mode explore] MOVE E from (11, 18)
+   why : En route to scan point (13, 18).
+   saw : Moved E to (12,18).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 065 | t=070 | battery 17 -> 16 | mode explore] MOVE E from (12, 18)
+   why : En route to scan point (13, 18).
+   saw : Moved E to (13,18).
+   belief: estimate (14, 18), confidence 33%, entropy 5.25 bits
+
+[step 066 | t=071 | battery 16 -> 14 | mode explore] SCAN from (13, 18)
+   why : Arrived at (13, 18): taking a reading.
+   saw : Scanned at (13, 18): strength 0.845, bearing 113 deg. EVE IS IN VIEW at (14, 18)!
+   belief: estimate (14, 18), confidence 100%, entropy -0.00 bits
+
+[step 067 | t=071 | battery 14 -> 14 | mode finish] STOP from (13, 18)
+   why : EVE visually confirmed at (14, 18); mission goal reached.
+   saw : Agent ended the mission.
+   belief: estimate (14, 18), confidence 100%, entropy -0.00 bits
+

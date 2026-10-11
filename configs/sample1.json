@@ -1,0 +1,113 @@
+{
+  "name": "Sample 1 - the quiet corridor",
+  "seed": 7,
+  "grid": {
+    "rows": [
+      "...............",
+      "...............",
+      "....#......#...",
+      "....#......#...",
+      "....#..###.....",
+      "....#..........",
+      "....#######....",
+      "...............",
+      "..###..........",
+      "...............",
+      "......##.......",
+      "......##...#...",
+      "...........#...",
+      "...............",
+      "..............."
+    ]
+  },
+  "start": [
+    1,
+    1
+  ],
+  "chargers": [
+    [
+      1,
+      1
+    ]
+  ],
+  "eve": {
+    "position": [
+      13,
+      12
+    ],
+    "status": "low_power"
+  },
+  "initial_signal": {
+    "bearing_deg": 94.5,
+    "strength": 0.161,
+    "timestamp": 0,
+    "bearing_sigma_deg": 35
+  },
+  "budget": {
+    "battery": 36,
+    "time": 150,
+    "max_recharges": 3,
+    "costs": {
+      "move": {
+        "battery": 1,
+        "time": 1
+      },
+      "scan": {
+        "battery": 2,
+        "time": 1
+      },
+      "recharge": {
+        "battery": 0,
+        "time": 6
+      }
+    }
+  },
+  "sensor": {
+    "s0": 1.0,
+    "decay_length": 8.0,
+    "strength_sigma": 0.04,
+    "bearing_sigma_base_deg": 8,
+    "bearing_sigma_per_cell_deg": 1.5,
+    "clue_scan_radius": 2,
+    "visual_range": 1.5,
+    "spoof_prob": 0.0
+  },
+  "clues": [
+    {
+      "id": "c1",
+      "type": "bearing",
+      "position": [
+        6,
+        3
+      ],
+      "sigma": 15
+    },
+    {
+      "id": "c2",
+      "type": "range",
+      "position": [
+        9,
+        8
+      ],
+      "sigma": 1.5
+    },
+    {
+      "id": "c3",
+      "type": "status",
+      "position": [
+        12,
+        10
+      ],
+      "hint": "low_power"
+    },
+    {
+      "id": "c4",
+      "type": "bearing",
+      "position": [
+        3,
+        12
+      ],
+      "sigma": 15
+    }
+  ]
+}

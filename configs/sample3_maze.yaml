@@ -1,0 +1,23 @@
+name: Sample 3 - tiny YAML maze
+seed: 3
+grid:
+  rows: ['..........', .####.###., '....#.....', ..#.#.###., ..#...#..., ..#####.#.,
+    '......#.#.', .####.#.#., .#....#..., .#.####.#.]
+start: [0, 0]
+chargers:
+- [0, 0]
+eve:
+  position: [9, 9]
+  status: dormant
+initial_signal: {bearing_deg: 140, strength: 0.3, timestamp: 0, bearing_sigma_deg: 30}
+budget: {battery: 30, time: 120, max_recharges: 3}
+sensor: {decay_length: 6.0}
+clues:
+- id: c1
+  type: range
+  position: [3, 2]
+  sigma: 1.5
+- id: c2
+  type: status
+  position: [7, 4]
+  hint: dormant
